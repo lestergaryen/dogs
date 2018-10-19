@@ -1,0 +1,21 @@
+docker pull
+
+docker images
+
+docker ps -a
+
+docker rm
+
+docker rmi
+
+docker run
+
+docker run -p 8000:5000 -v %cd%://var/www -w "/var/www" a2b node app.js
+
+# WITH Dockerfile
+
+docker build -t demo/dogs -f Dockerfile .
+
+docker images
+
+docker run -p 5000:5000 demo/dogs
